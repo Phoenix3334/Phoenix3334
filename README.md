@@ -43,7 +43,8 @@ I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **di
 | [#47614 · Async PP Streams](https://github.com/sgl-project/sglang/pull/47614) | Fixed cross-stream tensor lifetime corruption |
 | [#43786 · FP8 Kernel Fusion](https://github.com/sgl-project/sglang/pull/43786) | Fused inverse RoPE into FP8 activation quantization |
 
-**MiniCPM-o 4.5 · B300 → Ascend 910C** — DSpark draft training, cross-platform integration, and full-duplex inference optimization (**RTF 0.6754 → 0.4829; −28.5%**).
+**MiniCPM-o 4.5 · B300 → Ascend 910C** https://github.com/Phoenix3334/minicpmo45-ascend
+— DSpark draft training, cross-platform integration, and full-duplex inference optimization (**RTF 0.6754 → 0.4829; −28.5%**).
 
 ## Contact
 
