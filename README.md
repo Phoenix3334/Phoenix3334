@@ -22,10 +22,13 @@ I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **di
 
 ## Selected Work
 
-- **[DP Health Routing #35721](https://github.com/sgl-project/sglang/pull/35721)** — Fixed health-check interference with user routing. **Merged**
-- **[Async PP Streams #47614](https://github.com/sgl-project/sglang/pull/47614)** — Fixed cross-stream tensor lifetime corruption. **Merged**
-- **[FP8 Kernel Fusion #43786](https://github.com/sgl-project/sglang/pull/43786)** — Fused inverse RoPE into FP8 activation quantization. **Merged**
-- **MiniCPM-o 4.5 (B300 → Ascend 910C)** — Trained a DSpark speculative draft and optimized full-duplex serving; matched-test RTF **0.6754 → 0.4829 (−28.5%)**.
+| SGLang PR (merged) | Contribution |
+| :--- | :--- |
+| [#35721 · DP Health Routing](https://github.com/sgl-project/sglang/pull/35721) | Isolated health checks from user-request routing |
+| [#47614 · Async PP Streams](https://github.com/sgl-project/sglang/pull/47614) | Fixed cross-stream tensor lifetime corruption |
+| [#43786 · FP8 Kernel Fusion](https://github.com/sgl-project/sglang/pull/43786) | Fused inverse RoPE into FP8 activation quantization |
+
+**MiniCPM-o 4.5 · B300 → Ascend 910C** — DSpark draft training, cross-platform integration, and full-duplex inference optimization (**RTF 0.6754 → 0.4829; −28.5%**).
 
 ## Contact
 
