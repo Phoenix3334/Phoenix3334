@@ -25,11 +25,9 @@ I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **di
 
 ## Frameworks & Tooling
 
-- **LLM Serving:** [SGLang](https://github.com/sgl-project/sglang) · [vLLM](https://github.com/vllm-project/vllm) / [vLLM-Ascend](https://github.com/vllm-project/vllm-ascend) · [xLLM](https://github.com/xLLM-AI/xllm) · [llama.cpp-omni](https://github.com/tc-mb/llama.cpp-omni) / GGML-CANN
-- **Training & ML:** PyTorch · DeepSpeed (ZeRO-2) · CPT/SFT and draft-model training
-- **Kernels & Accelerator Stacks:** CUDA · Triton / Triton-Ascend · TileLang · Ascend C · CANN · CUDA Graph / ACL Graph
-- **Distributed & HPC:** NCCL · MPI / OpenMP · NUMA / CPU affinity · FFTW / HPCG
-- **Profiling & Benchmarking:** Nsight Systems (nsys) · Nsight Compute (ncu) · msprof · end-to-end and kernel microbenchmarks
+- **LLM Serving:** SGLang · vLLM / vLLM-Ascend · llama.cpp-omni
+- **Training & Kernels:** PyTorch · DeepSpeed · Triton · TileLang
+- **Systems & Profiling:** CUDA / CANN · NCCL · Nsight Systems / Compute
 
 ## My View of AI Systems
 
