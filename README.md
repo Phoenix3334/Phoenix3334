@@ -12,14 +12,19 @@
 
 ## About
 
-I work on **distributed LLM inference**, connecting runtime correctness and GPU optimization with SLO-aware capacity planning and cost evaluation.
+I work across **LLM model adaptation (CPT/SFT)** and **distributed inference**, connecting model behavior with runtime correctness, GPU/NPU performance, and SLO-aware deployment evaluation.
 
 ```mermaid
 flowchart TB
-    M["Data & Models"] --> E["End-to-End Evaluation<br/>Performance · Reliability · Cost"]
-    S["Inference Systems"] --> E
-    H["GPU / NPU Hardware"] --> E
-    E -. "Feedback" .-> S
+    D["Data & Training<br/>Continued Pretraining (CPT) · SFT"]
+    M["Models & Algorithms<br/>Architecture · Attention · MoE"]
+    S["AI Infrastructure<br/>Distributed Systems · Inference Runtime"]
+    H["Hardware<br/>GPU / NPU · Memory · Interconnect"]
+    E["End-to-End Evaluation<br/>Quality · Performance · Reliability · Cost"]
+
+    D --> M --> S --> E
+    H --> S
+    E -. "Feedback" .-> D
 ```
 
 ## Selected Contributions
