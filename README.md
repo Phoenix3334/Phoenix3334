@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://phoenix3334.github.io/">Personal Website</a> ·
+  <a href="https://phoenix3334.github.io/blog/">Blog</a> ·
   <a href="https://github.com/sgl-project/sglang/pulls?q=is%3Apr+author%3APhoenix3334">SGLang PRs</a> ·
   <a href="https://github.com/Phoenix3334">GitHub</a>
 </p>
