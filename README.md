@@ -12,7 +12,15 @@
 
 ## About
 
-I work on **LLM serving systems**, from distributed scheduling and CUDA stream correctness to GPU kernel optimization. I focus on **reproducible benchmarks, SLO-aware capacity planning, and hardware efficiency / TCO evaluation** across NVIDIA GPUs and Ascend NPUs.
+I work on **distributed LLM inference**, connecting runtime correctness and GPU optimization with SLO-aware capacity planning and cost evaluation.
+
+```mermaid
+flowchart TB
+    M["Data & Models"] --> E["End-to-End Evaluation<br/>Performance · Reliability · Cost"]
+    S["Inference Systems"] --> E
+    H["GPU / NPU Hardware"] --> E
+    E -. "Feedback" .-> S
+```
 
 ## Selected Contributions
 
