@@ -26,4 +26,4 @@ I work on **LLM serving systems**, from distributed scheduling and CUDA stream c
 
 ## Contact
 
-Reach me via [GitHub](https://github.com/Phoenix3334).
+Email: [1187883824@qq.com](mailto:1187883824@qq.com) · [GitHub](https://github.com/Phoenix3334)
