@@ -22,7 +22,7 @@ I work on **LLM serving systems**, from distributed scheduling and CUDA stream c
 
 - **[DP Health Routing #35721](https://github.com/sgl-project/sglang/pull/35721)** — Fixed health-check interference with user request routing. **Merged**
 - **[Async PP Streams #47614](https://github.com/sgl-project/sglang/pull/47614)** — Fixed cross-stream tensor lifetime corruption. **Merged**
-- **[DCP A2A Packing #49455](https://github.com/sgl-project/sglang/pull/49455)** — Reduced kernel time from 15.0 to 6.9 µs on B300. **Open**
+- **[FP8 Kernel Fusion #43786](https://github.com/sgl-project/sglang/pull/43786)** — Fused inverse RoPE with FP8 activation quantization to reduce memory traffic and kernel launches. **Merged**
 
 ## Contact
 
