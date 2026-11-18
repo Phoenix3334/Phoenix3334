@@ -25,6 +25,7 @@ My work includes inference runtime debugging, profiling, kernel optimization, an
 | **Runtime correctness** | Request routing, asynchronous execution, CUDA stream and memory lifetimes |
 | **GPU performance** | CUDA / Triton kernels, NCCL communication, profiling and optimization |
 | **Inference benchmarking** | Throughput, latency, resource utilization, and controlled A/B experiments |
+| **Capacity planning & TCO** | SLO-aware GPU sizing, P:D capacity ratios, cross-hardware efficiency, and inputs to deployment-cost estimates |
 
 ## Selected SGLang Contributions
 
