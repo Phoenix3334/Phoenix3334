@@ -14,10 +14,6 @@
 
 I work on **LLM serving systems**, from distributed scheduling and CUDA stream correctness to GPU kernel optimization. I focus on **reproducible benchmarks, SLO-aware capacity planning, and hardware efficiency / TCO evaluation** across NVIDIA GPUs and Ascend NPUs.
 
-## Focus
-
-**SGLang · vLLM · TP/PP/DP/EP · CUDA/Triton · NCCL · Profiling & Benchmarking**
-
 ## Selected Contributions
 
 - **[DP Health Routing #35721](https://github.com/sgl-project/sglang/pull/35721)** — Fixed health-check interference with user request routing. **Merged**
