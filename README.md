@@ -14,19 +14,6 @@
 
 I work across **LLM model adaptation (CPT/SFT)** and **distributed inference**, connecting model behavior with runtime correctness, GPU/NPU performance, and SLO-aware deployment evaluation.
 
-```mermaid
-flowchart TB
-    T["Model Training<br/>CPT · SFT · RL"]
-    M["Models & Algorithms<br/>Architecture · Attention · MoE"]
-    I["Inference Runtime<br/>Serving · RL Rollouts"]
-    H["AI Infrastructure & Hardware<br/>Distributed Systems · GPU / NPU"]
-    E["End-to-End Evaluation<br/>Quality · Performance · Reliability · Cost"]
-
-    T --> M --> I --> E
-    H --> I
-    I -. "Rollout feedback for RL" .-> T
-    E -. "Evaluation feedback" .-> T
-```
 
 ## Selected Contributions
 
