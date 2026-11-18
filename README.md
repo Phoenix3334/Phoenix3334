@@ -16,15 +16,16 @@ I work across **LLM model adaptation (CPT/SFT)** and **distributed inference**, 
 
 ```mermaid
 flowchart TB
-    D["Data & Training<br/>Continued Pretraining (CPT) · SFT"]
+    T["Model Training<br/>CPT · SFT · RL"]
     M["Models & Algorithms<br/>Architecture · Attention · MoE"]
-    S["AI Infrastructure<br/>Distributed Systems · Inference Runtime"]
-    H["Hardware<br/>GPU / NPU · Memory · Interconnect"]
+    I["Inference Runtime<br/>Serving · RL Rollouts"]
+    H["AI Infrastructure & Hardware<br/>Distributed Systems · GPU / NPU"]
     E["End-to-End Evaluation<br/>Quality · Performance · Reliability · Cost"]
 
-    D --> M --> S --> E
-    H --> S
-    E -. "Feedback" .-> D
+    T --> M --> I --> E
+    H --> I
+    I -. "Rollout feedback for RL" .-> T
+    E -. "Evaluation feedback" .-> T
 ```
 
 ## Selected Contributions
