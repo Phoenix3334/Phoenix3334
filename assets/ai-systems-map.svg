@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Feihong Guo - AI Systems from Training to Serving</title>
+<desc id="diagram-desc">Conceptual map of data, model training with CPT SFT and RL, models, inference runtime with online serving and RL rollout generation, evaluation, and the distributed hardware foundation. Rollouts feed RL training; evaluation informs iterations.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A1120"/><stop offset="1" stop-color="#101B2B"/></linearGradient>
+ <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#90A5C1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <marker id="feedback-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#60D6BF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <style>
+  text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:1.8px;fill:#6DDCC6}
+  .heading{font-size:25px;font-weight:700;fill:#F4F8FF}
+  .subhead{font-size:13px;fill:#A8B9D1}
+  .eyebrow{font-size:10.5px;font-weight:700;letter-spacing:1.2px}
+  .card-title{font-size:17px;font-weight:700;fill:#ECF3FF}
+  .body{font-size:13px;fill:#B4C2D5}
+  .note{font-size:11px;fill:#829CB6}
+  .flow{fill:none;stroke:#90A5C1;stroke-width:2;marker-end:url(#arrow)}
+  .feedback{fill:none;stroke:#60D6BF;stroke-width:1.8;stroke-dasharray:6 6;marker-end:url(#feedback-arrow)}
+ </style>
+</defs>
+<rect width="1200" height="500" rx="18" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="498" rx="17" fill="none" stroke="#2C3B53"/>
+<rect x="38" y="40" width="4" height="34" rx="2" fill="#60D6BF"/>
+<text x="56" y="54" class="kicker">AI SYSTEMS · END-TO-END VIEW</text>
+<text x="56" y="82" class="heading">From Model Development to Reliable Serving</text>
+<text x="1150" y="54" text-anchor="end" class="subhead">FEIHONG GUO / SYSTEMS MAP</text>
+<!-- Evaluation feedback loop -->
+<path d="M1060 155 V123 H379 V155" class="feedback"/>
+<rect x="571" y="108" width="300" height="24" rx="12" fill="#0D1D2B" stroke="#1D514B"/>
+<text x="721" y="124" text-anchor="middle" font-size="11" fill="#7EE4D1">evaluation-informed iteration</text>
+<g>
+ <rect x="40" y="155" width="204" height="157" rx="12" fill="#172538" stroke="#34506A"/>
+ <path d="M44 157 H240" stroke="#7CB6E5" stroke-width="4" stroke-linecap="round"/>
+ <text x="58" y="184" class="eyebrow" fill="#7CB6E5">01 / INPUTS</text>
+ <text x="58" y="216" class="card-title">Data</text>
+ <text x="58" y="246" class="body">Domain &amp; task data</text>
+ <text x="58" y="268" class="body">Evaluation workloads</text>
+ <text x="58" y="293" class="note">representative inputs</text>
+</g>
+<g>
+ <rect x="268" y="155" width="204" height="157" rx="12" fill="#172538" stroke="#287F77"/>
+ <path d="M272 157 H468" stroke="#60D6BF" stroke-width="4" stroke-linecap="round"/>
+ <text x="286" y="184" class="eyebrow" fill="#60D6BF">02 / LEARNING</text>
+ <text x="286" y="216" class="card-title">Training</text>
+ <text x="286" y="246" class="body">CPT · SFT</text>
+ <text x="286" y="268" class="body">RL / policy updates</text>
+ <text x="286" y="293" class="note">train &amp; adapt</text>
+</g>
+<g>
+ <rect x="496" y="155" width="204" height="157" rx="12" fill="#172538" stroke="#575384"/>
+ <path d="M500 157 H696" stroke="#B1A5F3" stroke-width="4" stroke-linecap="round"/>
+ <text x="514" y="184" class="eyebrow" fill="#B1A5F3">03 / MODEL</text>
+ <text x="514" y="216" class="card-title">Models</text>
+ <text x="514" y="246" class="body">Architecture</text>
+ <text x="514" y="268" class="body">Attention · MoE</text>
+ <text x="514" y="293" class="note">compute semantics</text>
+</g>
+<g>
+ <rect x="724" y="155" width="204" height="157" rx="12" fill="#172538" stroke="#276D83"/>
+ <path d="M728 157 H924" stroke="#61C3E1" stroke-width="4" stroke-linecap="round"/>
+ <text x="742" y="184" class="eyebrow" fill="#61C3E1">04 / EXECUTION</text>
+ <text x="742" y="216" class="card-title">Inference Runtime</text>
+ <text x="742" y="246" class="body">Online serving</text>
+ <text x="742" y="268" class="body">RL rollout generation</text>
+ <text x="742" y="293" class="note">scheduling &amp; execution</text>
+</g>
+<g>
+ <rect x="952" y="155" width="208" height="157" rx="12" fill="#172538" stroke="#82724F"/>
+ <path d="M956 157 H1156" stroke="#E7BB78" stroke-width="4" stroke-linecap="round"/>
+ <text x="970" y="184" class="eyebrow" fill="#E7BB78">05 / OUTCOMES</text>
+ <text x="970" y="216" class="card-title">Evaluation</text>
+ <text x="970" y="246" class="body">Quality · SLOs</text>
+ <text x="970" y="268" class="body">Reliability · Cost / TCO</text>
+ <text x="970" y="293" class="note">end-to-end trade-offs</text>
+</g>
+<!-- Main model-to-serving lifecycle -->
+<path d="M245 233 H266" class="flow"/>
+<path d="M473 233 H494" class="flow"/>
+<path d="M701 233 H722" class="flow"/>
+<path d="M929 233 H950" class="flow"/>
+<!-- RL rollout generation depends on inference runtime -->
+<path d="M821 313 V347 H370 V313" class="feedback"/>
+<rect x="494" y="334" width="216" height="24" rx="12" fill="#0D1D2B" stroke="#1D514B"/>
+<text x="602" y="350" font-size="11" text-anchor="middle" fill="#7EE4D1">rollouts feed RL training</text>
+<!-- Shared systems and hardware foundation -->
+<rect x="40" y="388" width="1120" height="72" rx="12" fill="#121F30" stroke="#34485F"/>
+<rect x="40" y="388" width="4" height="72" rx="2" fill="#7D93B3"/>
+<text x="60" y="417" font-size="14" font-weight="700" fill="#E5EFFF">AI Infrastructure &amp; Hardware</text>
+<text x="60" y="440" font-size="13" fill="#A9BDD4">Distributed systems</text>
+<circle cx="354" cy="425" r="2.5" fill="#627C98"/>
+<text x="378" y="430" font-size="13" fill="#A9BDD4">GPU / NPU compute</text>
+<circle cx="628" cy="425" r="2.5" fill="#627C98"/>
+<text x="652" y="430" font-size="13" fill="#A9BDD4">Memory &amp; interconnect</text>
+<circle cx="926" cy="425" r="2.5" fill="#627C98"/>
+<text x="950" y="430" font-size="13" fill="#A9BDD4">Communication</text>
+<text x="1149" y="487" text-anchor="end" font-size="10.5" fill="#8296B0">Conceptual system map · not a claim of hands-on experience in every stage</text>
+</svg>
