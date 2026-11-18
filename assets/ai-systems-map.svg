@@ -42,8 +42,8 @@
  <path d="M272 157 H468" stroke="#60D6BF" stroke-width="4" stroke-linecap="round"/>
  <text x="286" y="184" class="eyebrow" fill="#60D6BF">02 / LEARNING</text>
  <text x="286" y="216" class="card-title">Training</text>
- <text x="286" y="246" class="body">CPT · SFT</text>
- <text x="286" y="268" class="body">RL / policy updates</text>
+ <text x="286" y="246" class="body">Pretraining · CPT</text>
+ <text x="286" y="268" class="body">Post-training · SFT / RL</text>
  <text x="286" y="293" class="note">train &amp; adapt</text>
 </g>
 <g>
