@@ -17,6 +17,12 @@
 
 I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **distributed / multimodal inference**, focusing on runtime correctness, GPU/NPU performance, and SLO-aware capacity planning and TCO.
 
+## Hardware Platforms
+
+- **NVIDIA GPUs:** H200 · B300 · GB300 — LLM serving, multi-GPU benchmarking, and distributed inference.
+- **Huawei Ascend NPUs:** 910B · 910C — model deployment, runtime tuning, and kernel optimization.
+- **ARM CPUs:** Kunpeng 920 — NUMA-aware optimization, SIMD, and MPI/OpenMP workloads.
+
 ## My View of AI Systems
 
 <p align="center">
