@@ -12,7 +12,7 @@
 
 ## About
 
-I work on **CPT/SFT model adaptation** and **distributed LLM inference**, focusing on runtime correctness, GPU/NPU performance, and SLO-aware capacity planning and TCO evaluation. I'm also interested in how **RL rollouts** connect training and inference.
+I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **distributed / multimodal inference**, focusing on runtime correctness, GPU/NPU performance, and SLO-aware capacity planning and TCO.
 
 ## My View of AI Systems
 
@@ -20,11 +20,12 @@ I work on **CPT/SFT model adaptation** and **distributed LLM inference**, focusi
   <img src="./assets/ai-systems-map.svg" width="100%" alt="AI systems map: data, training, models, inference runtime, hardware, evaluation and feedback loops." />
 </p>
 
-## Selected SGLang Contributions
+## Selected Work
 
 - **[DP Health Routing #35721](https://github.com/sgl-project/sglang/pull/35721)** — Fixed health-check interference with user routing. **Merged**
 - **[Async PP Streams #47614](https://github.com/sgl-project/sglang/pull/47614)** — Fixed cross-stream tensor lifetime corruption. **Merged**
 - **[FP8 Kernel Fusion #43786](https://github.com/sgl-project/sglang/pull/43786)** — Fused inverse RoPE into FP8 activation quantization. **Merged**
+- **MiniCPM-o 4.5 (B300 → Ascend 910C)** — Trained a DSpark speculative draft and optimized full-duplex serving; matched-test RTF **0.6754 → 0.4829 (−28.5%)**.
 
 ## Contact
 
