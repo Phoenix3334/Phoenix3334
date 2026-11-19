@@ -14,9 +14,9 @@
 
 ## About
 
-I work on turning models into **reliable inference capacity under real latency and resource constraints**. From medical-AI prototyping and multimodal inference optimization on Ascend to distributed SGLang serving at Baidu AI Cloud, I follow the **model → runtime → hardware → capacity** path—using reproducible performance evidence to inform parallelism choices, accelerator selection, and downstream cost/TCO assessment.
+I work on **LLM inference systems**, from model adaptation and Ascend optimization to distributed SGLang serving. I use reproducible benchmarks to assess performance and capacity, informing accelerator selection and future TCO analysis.
 
-我关注如何把模型能力转化为**满足业务时延与资源约束的可靠推理产能**。从医疗 AI 原型、昇腾多模态推理与算子优化，到百度智能云的 SGLang 分布式推理压测和运行时排障，我始终沿着**模型 → 运行时 → 硬件 → 服务容量**这条主线，以可复现的性能数据支撑并行配置、算力选型及后续成本与 TCO 评估。
+聚焦**大模型推理系统**：从医疗 AI 模型适配、昇腾推理优化到百度 SGLang 分布式服务，以可复现压测评估性能与容量，为算力选型及后续 TCO 分析提供依据。
 
 ## Selected Work
 
