@@ -14,9 +14,9 @@
 
 ## About
 
-I work on **LLM inference systems**, from model adaptation and Ascend optimization to distributed SGLang serving. I use reproducible benchmarks to assess performance and capacity, informing accelerator selection and future TCO analysis.
+I focus on **LLM inference and AI infrastructure engineering**, spanning deployment, runtime optimization, performance evaluation, and capacity planning to inform hardware selection and downstream cost analysis.
 
-聚焦**大模型推理系统**：从医疗 AI 模型适配、昇腾推理优化到百度 SGLang 分布式服务，以可复现压测评估性能与容量，为算力选型及后续 TCO 分析提供依据。
+聚焦**大模型推理与 AI 基础设施工程**，围绕部署、运行时优化、性能评测与容量规划开展实践，以可复现的性能数据支撑算力选型及后续成本评估。
 
 ## Selected Work
 
