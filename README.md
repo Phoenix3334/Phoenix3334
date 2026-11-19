@@ -1,51 +1,44 @@
 <h1 align="center">Feihong Guo</h1>
 
 <p align="center">
-  <b>AI Infra Engineer · SGLang Contributor</b><br/>
-  LLM Training &amp; Adaptation · Distributed Inference · GPU/NPU Systems
+  <b>AI Systems · LLM Inference Engineering</b><br/>
+  Model Adaptation · Distributed Serving · GPU/NPU Performance
 </p>
 
 <p align="center">
   <a href="https://phoenix3334.github.io/">Personal Website</a> ·
-  <a href="https://phoenix3334.github.io/blog/">Blog</a> ·
-  <a href="https://github.com/stars/Phoenix3334/lists/ai-infra">AI Infra Reading List</a> ·
+  <a href="https://phoenix3334.github.io/blog/">Engineering Notes</a> ·
   <a href="https://github.com/sgl-project/sglang/pulls?q=is%3Apr+author%3APhoenix3334">SGLang PRs</a> ·
-  <a href="https://github.com/Phoenix3334">GitHub</a>
+  <a href="https://github.com/stars/Phoenix3334/lists/ai-infra">AI Infra Reading List</a>
 </p>
 
 ## About
 
-I work across **LLM training/adaptation (CPT, SFT, and DSpark drafts)** and **distributed / multimodal inference**, focusing on runtime correctness, GPU/NPU performance, and SLO-aware capacity planning and TCO.
-
-## Hardware Platforms
-
-- **NVIDIA GPUs:** H200 · B300 · GB300 — LLM serving, multi-GPU benchmarking, and distributed inference.
-- **Huawei Ascend NPUs:** 910B · 910C — model deployment, runtime tuning, and kernel optimization.
-- **ARM CPUs:** Kunpeng 920 — NUMA-aware optimization, SIMD, and MPI/OpenMP workloads.
-
-## Frameworks & Tooling
-
-- **LLM Serving:** SGLang · vLLM / vLLM-Ascend · llama.cpp-omni
-- **Training & Kernels:** PyTorch · DeepSpeed · Triton · TileLang
-- **Systems & Profiling:** CUDA / CANN · NCCL · Nsight Systems / Compute
-
-## My View of AI Systems
-
-<p align="center">
-  <img src="./assets/ai-systems-map.svg" width="100%" alt="AI systems map: data, training, models, inference runtime, hardware, evaluation and feedback loops." />
-</p>
+I work on the path from **model development to efficient, reliable inference systems**. My projects connect medical-AI prototyping, multimodal inference on heterogeneous accelerators, and distributed LLM serving. I focus on tracing runtime problems to their causes, validating optimizations under controlled workloads, and turning latency-qualified performance measurements into capacity-planning evidence.
 
 ## Selected Work
 
-| SGLang PR (merged) | Contribution |
-| :--- | :--- |
-| [#35721 · DP Health Routing](https://github.com/sgl-project/sglang/pull/35721) | Isolated health checks from user-request routing |
-| [#47614 · Async PP Streams](https://github.com/sgl-project/sglang/pull/47614) | Fixed cross-stream tensor lifetime corruption |
-| [#43786 · FP8 Kernel Fusion](https://github.com/sgl-project/sglang/pull/43786) | Fused inverse RoPE into FP8 activation quantization |
+**[SGLang · Distributed LLM Serving](https://github.com/sgl-project/sglang)** — Benchmarked and debugged DeepSeek/Kimi inference on NVIDIA H200, B300 and GB300, covering Prefill/Decode, parallel configurations, runtime correctness and service capacity.
 
-**MiniCPM-o 4.5 · B300 → Ascend 910C** https://github.com/Phoenix3334/minicpmo45-ascend
-— DSpark draft training, cross-platform integration, and full-duplex inference optimization (**RTF 0.6754 → 0.4829; −28.5%**).
+- **Runtime correctness:** [DP health routing #35721](https://github.com/sgl-project/sglang/pull/35721) · [Async PP stream lifetime #47614](https://github.com/sgl-project/sglang/pull/47614)
+- **Kernel & configuration work:** [Inverse RoPE + FP8 fusion #43786](https://github.com/sgl-project/sglang/pull/43786) · [EPLB validation #48404](https://github.com/sgl-project/sglang/pull/48404)
+
+**[MiniCPM-o 4.5 · Full-Duplex Inference](https://github.com/Phoenix3334/minicpmo45-ascend)** — Connected DSpark draft training on B300/DP8 with GGUF deployment and llama.cpp-omni / ggml-CANN optimization on Ascend 910C. Worked on TileLang kernels, ACL Graph and Flow/Vocoder execution; paired 120 s duplex **core RTF: 0.6754 → 0.4829 (−28.5%)**.
+
+**[ThermoPulse · Medical AI Prototype](https://phoenix3334.github.io/#medical)** — A measurement-to-report system spanning long-wave infrared acquisition, YOLOv11 localization, **ResNet18 + Transformer spatial dual-stream vision**, CUDA/TensorRT deployment work, and **Qwen3-8B CPT → SFT** for structured medical reporting.
+
+## Platforms & Tooling
+
+- **Hardware:** NVIDIA H200 / B300 / GB300 · Ascend 910B / 910C · Kunpeng 920
+- **Serving & training:** SGLang · vLLM / vLLM-Ascend · llama.cpp-omni · PyTorch · DeepSpeed
+- **Kernels & systems:** CUDA / CANN · Triton · TileLang · NCCL · Nsight Systems / Compute
+
+## Systems View
+
+<p align="center">
+  <img src="./assets/ai-systems-map.svg" width="100%" alt="AI systems map spanning data, training, inference runtime, accelerators, evaluation, and feedback." />
+</p>
 
 ## Contact
 
-[Email](mailto:1187883824@qq.com) · [GitHub](https://github.com/Phoenix3334)
+[Email](mailto:1187883824@qq.com) · [Personal Website](https://phoenix3334.github.io/)
