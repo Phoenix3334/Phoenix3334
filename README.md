@@ -20,10 +20,12 @@ I focus on **LLM inference and AI infrastructure engineering**, spanning deploym
 
 ## Selected Work
 
-**[SGLang · Distributed LLM Serving](https://github.com/sgl-project/sglang)** — Benchmarked and debugged DeepSeek/Kimi inference on NVIDIA H200, B300 and GB300, covering Prefill/Decode, parallel configurations, runtime correctness and service capacity.
+**[SGLang · Distributed LLM Serving](https://github.com/sgl-project/sglang)** — Benchmarked and debugged DeepSeek/Kimi serving on NVIDIA H200, B300 and GB300, connecting Prefill/Decode throughput, latency, parallel layouts, memory constraints and runtime correctness to workload-specific service capacity.
 
 - **Runtime correctness:** [DP health routing #35721](https://github.com/sgl-project/sglang/pull/35721) · [Async PP stream lifetime #47614](https://github.com/sgl-project/sglang/pull/47614)
 - **Kernel & configuration work:** [Inverse RoPE + FP8 fusion #43786](https://github.com/sgl-project/sglang/pull/43786) · [EPLB validation #48404](https://github.com/sgl-project/sglang/pull/48404)
+
+**Evaluation perspective:** Workload and SLO → verified service throughput → P/D capacity → infrastructure choices. [Capacity and cost methodology](https://phoenix3334.github.io/#economics) (financial TCO modeling is follow-on work).
 
 **[MiniCPM-o 4.5 · Full-Duplex Inference](https://github.com/Phoenix3334/minicpmo45-ascend)** — Connected DSpark draft training on B300/DP8 with GGUF deployment and llama.cpp-omni / ggml-CANN optimization on Ascend 910C. Worked on TileLang kernels, ACL Graph and Flow/Vocoder execution; paired 120 s duplex **core RTF: 0.6754 → 0.4829 (−28.5%)**.
 
