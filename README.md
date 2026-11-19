@@ -14,7 +14,9 @@
 
 ## About
 
-I work on the path from **model development to efficient, reliable inference systems**. My projects connect medical-AI prototyping, multimodal inference on heterogeneous accelerators, and distributed LLM serving. I focus on tracing runtime problems to their causes, validating optimizations under controlled workloads, and turning latency-qualified performance measurements into capacity-planning evidence.
+I focus on **LLM inference systems** — from model adaptation to GPU/NPU runtime optimization and serving capacity evaluation.
+
+聚焦**大模型推理系统**：从模型适配到 GPU/NPU 运行时优化与推理服务容量评估。
 
 ## Selected Work
 
